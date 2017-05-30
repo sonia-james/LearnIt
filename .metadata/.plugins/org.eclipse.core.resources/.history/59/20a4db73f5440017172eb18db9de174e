@@ -1,0 +1,23 @@
+package learnit.dsa.arrays;
+
+/*
+ * Given an integer find the immediate larger integer that that which is a palindrome, 
+ * example 1234212 -> 1234321, 345676 -> 346643.
+ */
+public class LargerPalindrome {
+	public static void main(String[] args) {
+		LargerPalindrome largerPalindrome = new LargerPalindrome();
+		largerPalindrome.nextPalindrome(1234123);
+	}
+	
+	public void nextPalindrome(int num){
+		String numString = Integer.toString(num);
+		char[] numArray = numString.toCharArray();
+		int midIndex = numArray.length/2;
+		boolean odd = numArray.length%2==0;
+		String rightHalf = odd?numString.substring(midIndex):numString.substring(midIndex+1);
+		String leftHalf = numString.substring(midIndex);
+		System.out.println(leftHalf);
+		
+	}
+}

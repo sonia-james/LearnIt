@@ -1,0 +1,10 @@
+package learnit.dsa.arrays;
+
+/*
+ * Given a number whose digits are unique, 
+ * find the next larger number that can be formed with those digits.
+ * Eg : 4325 -> 4352
+ */
+public class LargerNumber {
+
+}
