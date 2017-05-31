@@ -3,17 +3,27 @@ package learnit.dsa.arrays;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RotateMatrix {
+/*
+ * Print a matrix in spiral fashion.
+ * Steps : Traverse right and increment rowBegin, then traverse down and decrement colEnd, 
+ * then Traverse left and decrement rowEnd, and finally Traverse up and increment colBegin.
+ * Repeat while colBegin<=colEnd and rowBegin<=rowEnd
+ * Make sure sure initialize to length-1
+ * For the case where its not a square matrix have to add check of row and column to avoid duplicate printing
+ */
+
+
+public class SpiralMatrix {
 	
 	public static void main(String[] args) {
-		RotateMatrix rotateMatrix = new RotateMatrix();
-		List<Integer> spriralList = rotateMatrix.rotateMatrix(new int[][]{{1,2,3},{4,5,6},{7,8,9}});
+		SpiralMatrix spiralMatrix = new SpiralMatrix();
+		List<Integer> spriralList = spiralMatrix.spiralMatrix(new int[][]{{1,2,3},{4,5,6},{7,8,9}});
 		System.out.println(spriralList);
-		spriralList = rotateMatrix.rotateMatrix(new int[][]{{2,3}});
+		spriralList = spiralMatrix.spiralMatrix(new int[][]{{2,3}});
 		System.out.println(spriralList);
 	}
 	
-	public List<Integer> rotateMatrix(int[][] matrix){
+	public List<Integer> spiralMatrix(int[][] matrix){
 		List<Integer> list = new ArrayList<Integer>();
 		if(null == matrix || matrix.length<1){
 			return list;
