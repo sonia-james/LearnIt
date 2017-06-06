@@ -18,7 +18,7 @@ public class QuickSort {
 		}
 	}
 	
-	public void quickSort(int[] a,int start, int end){
+	private void quickSort(int[] a,int start, int end){
 		if(start<end){
 			int pivotIndex = partition(a,start,end);
 			quickSort(a,start,pivotIndex-1);
@@ -26,7 +26,7 @@ public class QuickSort {
 		}
 	}
 	
-	public int partition(int[] a, int start, int end) {
+	private int partition(int[] a, int start, int end) {
 		int pivot = a[end];
 		int temp, i = start, j = end - 1, pivotIndex = start;
 		while (i < j) {

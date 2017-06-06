@@ -19,7 +19,7 @@ public class MaxMin {
 	 * Specifically -> 2n
 	 * @param numbers
 	 */
-	public void bruteForse(int[] numbers){
+	private void bruteForse(int[] numbers){
 		int min = numbers[0];
 		int max = numbers[0];
 		for(int i=0;i<numbers.length;i++){
@@ -37,7 +37,7 @@ public class MaxMin {
 	 * Specifically -> 3*n/2 -> 1.5n
 	 * @param numbers
 	 */
-	public void twoPointers(int[] numbers){
+	private void twoPointers(int[] numbers){
 		int min = numbers[0];
 		int max = numbers[0];
 		for(int i=0,j=numbers.length-1;i<=j;i++,j--){

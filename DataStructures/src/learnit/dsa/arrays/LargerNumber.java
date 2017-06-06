@@ -18,7 +18,7 @@ public class LargerNumber {
 		largerNumber.findLargerNumber(754621);
 	}
 	
-	public void findLargerNumber(int num){
+	private void findLargerNumber(int num){
 		String numString = Integer.toString(num);
 		char[] numArray = numString.toCharArray();
 		boolean hasLargerNum = false;
@@ -36,7 +36,7 @@ public class LargerNumber {
 		else System.out.println("No larger number");
 	}
 	
-	public void swapWithNextSmall(char[] numArray, int index){
+	private void swapWithNextSmall(char[] numArray, int index){
 		int minIndex = index+1;
 		for(int i=index+1;i<numArray.length;i++){
 			if(numArray[i]>numArray[index] && numArray[i]<numArray[minIndex]){
@@ -48,7 +48,7 @@ public class LargerNumber {
 		numArray[index] = temp;
 	}
 	
-	public void reverse(char[] numArray, int index){
+	private void reverse(char[] numArray, int index){
 		char temp;
 		for(int i=index,j=numArray.length-1;i<=j;i++,j--){
 			temp = numArray[i];

@@ -15,7 +15,7 @@ public class MergeSort {
 		}
 	}
 	
-	public int[] mergeSort(int[] array){
+	private int[] mergeSort(int[] array){
 		if(array.length==1){
 			return array;
 		}
@@ -35,7 +35,7 @@ public class MergeSort {
 		return array;
 	}
 	
-	public void merge(int[] left, int[] right, int[] array){
+	private void merge(int[] left, int[] right, int[] array){
 		int k=0,j=0,i=0;
 		while(i<left.length && j<right.length){
 			if(left[i]<right[j]){

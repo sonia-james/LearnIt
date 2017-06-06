@@ -34,7 +34,7 @@ public class MoveZeros {
 		}
 	}
 	
-	public int[] moveZerosToRight(int[] numbers){
+	private int[] moveZerosToRight(int[] numbers){
 		if(null==numbers || numbers.length<2) {
 			return numbers;
 		}
@@ -51,7 +51,7 @@ public class MoveZeros {
 		return numbers;
 	}
 
-	public int[] moveZerosToLeft(int[] numbers){
+	private int[] moveZerosToLeft(int[] numbers){
 		if(null==numbers || numbers.length<2) {
 			return numbers;
 		}

@@ -29,7 +29,7 @@ public class LargerPalindrome {
 		System.out.println(largerPalindrome.nextPalindrome(3214123));
 	}
 	
-	public String nextPalindrome(int num){
+	private String nextPalindrome(int num){
 		if(num==0){
 			return Integer.toString(1);
 		}
@@ -60,7 +60,7 @@ public class LargerPalindrome {
 		}
 	}
 	
-	public String reverse(String inputString){
+	private String reverse(String inputString){
 		char[] inputArray = inputString.toCharArray();
 		char temp;
 		for(int i = 0,j=inputArray.length-1;i<=j;i++,j--){

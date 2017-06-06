@@ -23,7 +23,7 @@ public class SpiralMatrix {
 		System.out.println(spriralList);
 	}
 	
-	public List<Integer> spiralMatrix(int[][] matrix){
+	private List<Integer> spiralMatrix(int[][] matrix){
 		List<Integer> list = new ArrayList<Integer>();
 		if(null == matrix || matrix.length<1){
 			return list;
