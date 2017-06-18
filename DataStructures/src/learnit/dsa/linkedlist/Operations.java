@@ -5,6 +5,7 @@ package learnit.dsa.linkedlist;
  * 1. Insert Iterative
  * 2. Insert Recursive
  * 3. Display
+ * 4. Display circular linked list
  */
 public class Operations {
 	public static void main(String[] args) {
@@ -65,5 +66,17 @@ public class Operations {
 		}
 		System.out.print(" "+head.val);
 		display(head.next);
+	}
+	
+	public void displayCircularList(Node head){
+		if(null==head){
+			return;
+		}
+		Node list = head;
+		do{
+			System.out.print(" "+list.val);
+			list = list.next;
+		}while(null!=list && list != head);
+		
 	}
 }
